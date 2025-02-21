@@ -89,21 +89,85 @@ console.log(
   desconto(totalCompra)
 );
 
-
 // Desvio condicional IF inline (ternário)
 // condição ? expressão_se_ verdadeiro : expressão_se_falso
 var preco = 500;
-var resultado = preco <= 100 ? "Tá barato!": "Vish, ta muito caro!";
+var resultado = preco <= 100 ? "Tá barato!" : "Vish, ta muito caro!";
 
 // O operador acima é o mesmo que escrever!
 // if(preco <=100){
 // resultado = "Ta´barato!"
 // }else(
 //   resultado = "Vish, ta muito caro!"
-//   { 
-console.log("preço: R$", preco, "-", resultado); 
+//   {
+console.log("preço: R$", preco, "-", resultado);
 
 //IF ternário com somente uma expressão
 // condição && expressão
 var logado = true;
 logado && console.log("Usuario está logado!");
+
+//Desvio condicional - Suitch Case
+console.log("---------------Swith Case---------------");
+switch (0) {
+  case 1:
+    console.log("O usuario digitou o numero 1!");
+    break;
+
+  default:
+    console.log("O usuario digitou um numero diferente de 1!");
+    break;
+}
+console.log("------------------------------");
+//Menu de Seleção
+var menuSelecionado = "Home";
+
+switch (menuSelecionado) {
+  case "Home":
+    console.log("Voce clicou no link 'Home'!");
+    break;
+
+  case "Quem somos":
+    console.log("Voce clicou no link 'Quem somos'");
+    break;
+
+  case "Contato":
+    console.log("Voce clicou no link 'Contato'");
+    break;
+
+  default:
+    console.log("Opção inválida");
+    break;
+}
+
+//Varias opçoes com mesmo case - Switch Case
+var mes = 11;
+
+switch (mes) {
+  case 1:
+  case 2:
+  case 3:
+    console.log("Primeiro trimestre");
+    break;
+
+  case 4:
+  case 5:
+  case 6:
+    console.log("Segundo trimestre");
+    break;
+
+  case 7:
+  case 8:
+  case 9:
+    console.log("Terceiro trimestre");
+    break;
+
+  case 10:
+  case 11:
+  case 12:
+    console.log("Quarto trimestre");
+    break;
+  default:
+    console.log("Mês inválido!");
+    break;
+}
